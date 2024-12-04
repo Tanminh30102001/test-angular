@@ -1,0 +1,59 @@
+.dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  button mat-icon {
+    vertical-align: middle;  /* Căn giữa icon với văn bản */
+    margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+    font-size: 18px; /* Điều chỉnh kích thước icon */
+  }
+  
+  .dialog-actions button {
+    min-width: 120px;
+    display: flex;
+    align-items: center;  /* Căn giữa icon và văn bản theo chiều dọc */
+    justify-content: center;  /* Căn giữa nội dung nút */
+  }
+  
+  button[mat-stroked-button] {
+    border: 1px solid;
+  }
+  
+  button[mat-raised-button] {
+    font-weight: bold;
+  }
+  
+  button mat-icon {
+    font-size: 20px; /* Điều chỉnh kích thước của icon để đồng bộ với văn bản */
+  }
+  
+  /* Các nút có màu sắc riêng biệt */
+  button[mat-stroked-button][color="accent"] {
+    color: #3f51b5;
+    border-color: #3f51b5;
+  }
+  
+  button[mat-raised-button][color="primary"] {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  button[mat-stroked-button][color="warn"] {
+    color: #f44336;
+    border-color: #f44336;
+  }
+  
+  button[mat-raised-button][color="primary"]:disabled {
+    background-color: #cccccc;
+    color: #666666;
+  }
+  
+  button[mat-stroked-button]:hover,
+  button[mat-raised-button]:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  

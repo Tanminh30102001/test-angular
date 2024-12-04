@@ -1,0 +1,114 @@
+.header-container {
+    background-color: rgb(33, 111, 219);
+    height: 70px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+  }
+  .company-name-container {
+    flex: 1 1 30%;
+    min-width: 200px; 
+  }
+ 
+  
+  .logo-container{
+    flex: 1 1 30%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .logo-container img {
+    max-width: 70%; 
+    max-height: 50%; 
+    height: auto;
+    background: transparent; 
+    border: none; 
+  }
+  .search-box-container {
+    flex: 3 1 40%;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .search-box {
+    width: 100%; 
+    padding: 12px 15px; 
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box; 
+  }
+  .search-box:focus {
+    border-color: #007bff; 
+    background-color: #e9f5ff; 
+    outline: none; 
+  }
+  .search-box:hover {
+    border-color: #0056b3; 
+  }
+  .company-name {
+    word-wrap: break-word; 
+    white-space: normal; 
+    font-size: 18px;
+    text-align: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .header-container {
+      height: auto; 
+      justify-content: space-between; 
+      padding: 10px;
+    }
+  
+    .logo-container,
+    .company-name-container {
+      text-align: center;
+    }
+  
+    .search-box-container {
+      margin: 10px 0; 
+    }
+  
+    .company-name {
+      font-size: 14px;
+      word-wrap: break-word; 
+      white-space: normal; 
+      text-align: center; 
+    }
+  
+    .search-box {
+      font-size: 14px; 
+      padding: 10px 12px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-container {
+        height: auto; 
+        justify-content: space-between; 
+     
+      }
+    .company-name {
+      font-size: 12px; 
+      word-wrap: break-word; 
+      white-space: normal; 
+      text-align: center; 
+    }
+    .search-box-container {
+        flex: 1 1 80%; 
+        width: 100%;
+        margin-right: 20px;
+      }
+ 
+    .logo-container,
+    .company-name-container {
+      flex: 1 1 10%;
+      min-width: 100px; 
+      text-align: center; 
+    }
+  
+  }
+  
